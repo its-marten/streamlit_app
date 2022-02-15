@@ -4,8 +4,8 @@ from sklearn.linear_model import LinearRegression
 import plotly.express as px
 import sklearn
 #Intro
-Clean Data.csv
-path = "Clean Data.csv"
+
+path = "/Users/mj/Desktop/Python%20For%20Datascience/Clean%20Data.csv"
 df_famala = pd.read_csv(path)
 df_famala["Date"] = pd.to_datetime(df_famala["Date"])
 df_famala.set_index(df_famala["Date"], inplace=True)
