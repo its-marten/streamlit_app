@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import plotly.express as px
-
+import sklearn
 #Intro
 path = "/Users/mj/Desktop/Python For Datascience/Clean Data.csv"
 df_famala = pd.read_csv(path)
