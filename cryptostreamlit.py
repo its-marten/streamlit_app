@@ -20,7 +20,7 @@ st.write("In every step I will show the code in python if you would be intereste
 st.write("I started by downloading the datasets from Kaggle.com. I downloaded a zip-file in which I found 20 csv-files of cryptocurrencies. I loaded all the data of the CSV-files into pycharm and I made a whole dataset of all the cryptocurrencies. There were some uninteresting columns in the data so I had to delete those. I ended up with a dataset that contained the columns: “Name”, “Symbol”, “Price”, “Marketcap” and “Date” as the index. I only needed this data to start my project.")
 
 """After doing all this the dataset was looking like this:"""
-path_raw_data = "/Users/mj/Desktop/Python For Datascience/Raw Data.csv"
+path_raw_data = "Raw Data.csv"
 df_raw = pd.read_csv(path_raw_data)
 df_raw.set_index("Date", inplace=True)
 df_raw.drop("Unnamed: 0", inplace=True, axis=1)
@@ -45,7 +45,7 @@ st.write("You can see the values of the index and the returns in this table.")
 st.dataframe(df_famala[["Famala Index", "Famala Index Return"]])
 
 
-path_crypto = f"/Users/mj/Desktop/Python For Datascience/Crypto Returns/{selection} Return.csv"
+path_crypto = f"{selection} Return.csv"
 df_crypto = pd.read_csv(path_crypto)
 df_crypto["Date"] = pd.to_datetime(df_crypto["Date"])
 df_crypto.set_index(df_crypto["Date"], inplace=True)
