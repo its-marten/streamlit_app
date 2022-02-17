@@ -5,11 +5,11 @@ import plotly.express as px
 import sklearn
 #Intro
 
-#path = "/Users/mj/Desktop/Python For Datascience/Clean Data.csv"
-#df_famala = pd.read_csv(path)
-#df_famala["Date"] = pd.to_datetime(df_famala["Date"])
-#df_famala.set_index(df_famala["Date"], inplace=True)
-#df_famala.drop("Date", axis=1, inplace=True)
+path =  "/Users/mj/Desktop/Python For Datascience/Clean Data.csv"
+df_famala = pd.read_csv(path)
+df_famala["Date"] = pd.to_datetime(df_famala["Date"])
+df_famala.set_index(df_famala["Date"], inplace=True)
+df_famala.drop("Date", axis=1, inplace=True)
 st.title("The FaMaLa Index: Crypto Data Project")
 st.write("Building my own crypto index and comparing returns of bitcoin to the market returns")
 st.write("In this blog you will read about my datascience project. The topic of my project is cryptocurrencies. "
