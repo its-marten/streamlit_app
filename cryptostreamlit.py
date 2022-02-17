@@ -6,7 +6,7 @@ import sklearn
 #Intro
 
 path =  "/Users/mj/Desktop/Python For Datascience/Clean Data.csv"
-df_famala = pd.read_csv("/Users/mj/Desktop/Python For Datascience/Clean Data.csv")
+df_famala = pd.read_csv(path)
 df_famala["Date"] = pd.to_datetime(df_famala["Date"])
 df_famala.set_index(df_famala["Date"], inplace=True)
 df_famala.drop("Date", axis=1, inplace=True)
